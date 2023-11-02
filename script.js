@@ -5,10 +5,13 @@ textarea.focus();
 
 textarea.addEventListener("keyup", (event) => {
   tagCreation(event.target.value);
-  setTimeout(() => {
-    event.target.value = "";
-  }, 10);
-  randomSelector();
+
+  if (event.key === "Enter") {
+    setTimeout(() => {
+      event.target.value = "";
+    }, 10);
+    randomSelector();
+  }
 });
 
 function tagCreation(input) {

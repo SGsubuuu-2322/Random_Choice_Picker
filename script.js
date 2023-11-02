@@ -38,6 +38,15 @@ function randomSelector() {
       unhighLight(randomTag);
     }, 100);
   }, 100);
+
+  setTimeout(() => {
+    clearInterval(interval);
+
+    setTimeout(() => {
+      const randomTag = pickRandomTag();
+      highLight(randomTag);
+    }, 100);
+  }, times * 100);
 }
 
 function pickRandomTag() {

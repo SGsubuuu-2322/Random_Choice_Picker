@@ -30,5 +30,24 @@ function tagCreation(input) {
 }
 
 function randomSelector() {
-  console.log("123");
+  const times = 30;
+  const interval = setInterval(() => {
+    const randomTag = pickRandomTag();
+    highLight(randomTag);
+    setTimeout(() => {
+      unhighLight(randomTag);
+    }, 100);
+  }, 100);
+}
+
+function pickRandomTag() {
+  const tags = document.querySelectorAll(".tag");
+  return tags[Math.floor(Math.random() * tags.length)];
+}
+
+function highLight(tag) {
+  tag.classList.add("highlight");
+}
+function unhighLight(tag) {
+  tag.classList.remove("highlight");
 }

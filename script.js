@@ -5,6 +5,10 @@ textarea.focus();
 
 textarea.addEventListener("keyup", (event) => {
   tagCreation(event.target.value);
+  setTimeout(() => {
+    event.target.value = "";
+  }, 10);
+  randomSelector();
 });
 
 function tagCreation(input) {
@@ -20,4 +24,8 @@ function tagCreation(input) {
     tagEl.classList.add("tag");
     tagsEL.appendChild(tagEl);
   });
+}
+
+function randomSelector() {
+  console.log("123");
 }

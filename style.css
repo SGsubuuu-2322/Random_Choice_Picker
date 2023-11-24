@@ -1,3 +1,6 @@
+/* This is the styling sheet for this project written using CSS3 technology... */
+
+/* This is some general stylings written for whole project... */
 @import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
 
 * {
@@ -16,16 +19,19 @@ body {
   margin: 0;
 }
 
+/* This is for heading or the title... */
 h3 {
   color: #fff;
   margin: 10px 0 20px;
   text-align: center;
 }
 
+/* This is for parent container... */
 .container {
   width: 500px;
 }
 
+/* This is for parent container... */
 textarea {
   border: none;
   display: block;
@@ -37,6 +43,7 @@ textarea {
   margin: 0 0 20px;
 }
 
+/* This is for tags or choices that are going to be displayed under the textarea... */
 .tag {
   background-color: #07ffe6;
   color: #fff;
@@ -47,6 +54,7 @@ textarea {
   display: inline-block;
 }
 
+/* This is for tag when it gets highlighted... */
 .tag.highlight {
   background-color: rgb(4, 0, 255);
   color: #00ffe5;
